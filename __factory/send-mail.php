@@ -11,8 +11,8 @@ $sender_message = $_REQUEST['senderMessage'];
 # request client emails
 $client_emails = $_REQUEST['clientEmails'];
 
-# send emails
+# send mails
 $send_mail = new SendMassMail($sender_name, $sender_email, $sender_subject, $sender_message);
-$send_mail->send($client_emails);
+$send_mail->send($client_emails); // send method recieves clients emails and process it.
 
 ?>

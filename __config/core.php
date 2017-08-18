@@ -19,7 +19,7 @@ class SendMassMail
 		$this->sender_message = $sender_message;
 	}
 
-	public function send($client_emails){
+	public function send($client_emails){ # client emails pass into the send method 
 
 		$from = $this->sender_name." <$this->sender_email>";
 		$headers = "From: $from \n";
